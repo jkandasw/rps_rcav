@@ -1,0 +1,19 @@
+<h1>Howdy!</h1>
+
+  <p> You played Rock. </p>
+
+  <img src="http://localhost:3000/assets/images/rock.png" width="200">
+
+<h2>
+  <%= rand(100) %>
+
+
+</h2>
+
+<p> The computer played <%= computer_move %>
+</p>
+
+<% if computer_move == "rock" %>
+<h3> You tied! </h3>
+
+<% end %>
