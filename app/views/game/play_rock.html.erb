@@ -4,30 +4,30 @@
 
   <img src="http://localhost:3000/assets/images/rock.png" width="200">
 
-<h2>
+<!-- <h2>
   <%= rand(100) %>
-</h2>
+</h2> -->
 
-<p> The computer played <%= computer_move %>
+<p> The computer played <%= @computer_move %>
 </p>
 
-<% if computer_move == "rock" %>
+<% if @computer_move == "rock" %>
 <h3> You tied! </h3>
 
 <% end %>
 
-<p> The computer played <%= computer_move %>
-</p>
+<!-- <p> The computer played <%= @computer_move %>
+</p> -->
 
-<% if computer_move == "paper" %>
+<% if @computer_move == "paper" %>
 <h3> You lose! </h3>
 
 <% end %>
 
-<p> The computer played <%= computer_move %>
-</p>
+<!-- <p> The computer played <%= @computer_move %>
+</p> -->
 
-<% if computer_move == "scissors" %>
+<% if @computer_move == "scissors" %>
 <h3> You win! </h3>
 
 <% end %>
