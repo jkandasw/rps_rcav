@@ -1,0 +1,36 @@
+<h1>Howdy!</h1>
+
+  <p> You played Rock. </p>
+
+  <img src="http://localhost:3000/assets/images/rock.png" width="200">
+
+<!-- <h2>
+  <%= rand(100) %>
+</h2> -->
+
+<p> The computer played <%= @computer_move %>
+</p>
+
+<% if @computer_move == "rock" %>
+<img src="http://localhost:3000/assets/images/rock.png" width="200">
+<h3> You tied! </h3>
+
+<% end %>
+
+<!-- <p> The computer played <%= @computer_move %>
+</p> -->
+
+<% if @computer_move == "paper" %>
+<img src="http://localhost:3000/assets/images/paper.png" width="200">
+<h3> You lose! </h3>
+
+<% end %>
+
+<!-- <p> The computer played <%= @computer_move %>
+</p> -->
+
+<% if @computer_move == "scissors" %>
+<img src="http://localhost:3000/assets/images/scissors.png" width="200">
+<h3> You win! </h3>
+
+<% end %>
