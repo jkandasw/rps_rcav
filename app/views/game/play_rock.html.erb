@@ -6,8 +6,6 @@
 
 <h2>
   <%= rand(100) %>
-
-
 </h2>
 
 <p> The computer played <%= computer_move %>
@@ -15,5 +13,21 @@
 
 <% if computer_move == "rock" %>
 <h3> You tied! </h3>
+
+<% end %>
+
+<p> The computer played <%= computer_move %>
+</p>
+
+<% if computer_move == "paper" %>
+<h3> You lose! </h3>
+
+<% end %>
+
+<p> The computer played <%= computer_move %>
+</p>
+
+<% if computer_move == "scissors" %>
+<h3> You win! </h3>
 
 <% end %>
