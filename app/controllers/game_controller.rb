@@ -17,4 +17,5 @@ def user_plays_scissors
   computer_move=moves.sample
   render("game/play_scissors.html.erb")
 end
+
 end
