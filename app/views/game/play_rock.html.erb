@@ -6,57 +6,51 @@
       </button>
     </div>
     <div class="col-md-3">
-      <button type="user_plays_scissors" class="btn btn-info btn-block">
-        Play scissors
+      <button type="button" class="btn btn-info btn-block" action="submit">
+        <a href="http://localhost:3000/scissors" class="btn btn-block btn-primary">
+          Play Scissors
+        </a>
+        <!-- <a href="scissors" class="btn btn-info btn-lg active" role="button">Play Scissors </a>
+        Play scissors -->
+
+<!-- <button action="user_plays_scissors"> -->
+
       </button>
     </div>
     <div class="col-md-3">
       <button type="user_plays_paper" class="btn btn-primary btn-block">
         Play paper
       </button></div>
-  </div>
-  <p> You played Rock. </p>
-
-  <img src="http://localhost:3000/assets/images/rock.png" width="200">
-
-  <div class="row">
-    <div class="col-md-offset-2 col-md-4">
-      <p> The computer played <%= @computer_move %>
-      </p>
-
-      <% if @computer_move == "rock" %>
-      <img src="http://localhost:3000/assets/images/rock.png" width="200">
-      <h3> You tied! </h3>
-
-      <% end %>
-
-      <!-- <p> The computer played <%= @computer_move %>
-      </p> -->
-
-      <% if @computer_move == "paper" %>
-      <img src="http://localhost:3000/assets/images/paper.png" width="200">
-      <h3> You lose! </h3>
-
-      <% end %>
-
-      <!-- <p> The computer played <%= @computer_move %>
-      </p> -->
-
-      <% if @computer_move == "scissors" %>
-      <img src="http://localhost:3000/assets/images/scissors.png" width="200">
-      <h3> You win! </h3>
-
-      <% end %>
-
     </div>
-    <div class="col-md-4"></div>
+    <p> You played Rock. </p>
+
+    <img src="http://localhost:3000/assets/images/rock.png" width="200">
+
+    <div class="row">
+      <div class="col-md-offset-2 col-md-4">
+
+        <% if @computer_move == "rock" %>
+        <img src="http://localhost:3000/assets/images/rock.png" width="200">
+        @new_move="You tied!"
+        <% elsif @computer_move == "paper"%>
+        <img src="http://localhost:3000/assets/images/paper.png" width="200">
+        @new_move="You lose!"
+
+        <% elsif @computer_move == "scissors"  %>
+        <img src="http://localhost:3000/assets/images/scissors.png" width="200">
+          new_move="You win!"
+          <% end %>
+
+      </div>
+      <div class="col-md-4"></div>
+    </div>
+    <div class="row">
+
+      <div class="col-xs-12"></div>
+    </div>
   </div>
-  <div class="row">
-    <div class="col-xs-12"></div>
-  </div>
-</div>
 
 
-<!-- <h2>
-<%= rand(100) %>
+  <!-- <h2>
+  <%= rand(100) %>
 </h2> -->
