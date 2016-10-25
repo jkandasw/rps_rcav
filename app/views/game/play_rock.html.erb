@@ -1,56 +1,59 @@
-<div class="container">
-  <div class="row">
-    <div class="col-md-offset-1 col-md-3">
-      <button type="user_plays_rock" class="btn btn-primary btn-block">
-        Play rock
-      </button>
-    </div>
-    <div class="col-md-3">
-      <button type="button" class="btn btn-info btn-block" action="submit">
-        <a href="http://localhost:3000/scissors" class="btn btn-block btn-primary">
-          Play Scissors
-        </a>
-        <!-- <a href="scissors" class="btn btn-info btn-lg active" role="button">Play Scissors </a>
-        Play scissors -->
-
-<!-- <button action="user_plays_scissors"> -->
-
-      </button>
-    </div>
-    <div class="col-md-3">
-      <button type="user_plays_paper" class="btn btn-primary btn-block">
-        Play paper
-      </button></div>
-    </div>
-    <p> You played Rock. </p>
-
-    <img src="http://localhost:3000/assets/images/rock.png" width="200">
-
+  <div class="container">
     <div class="row">
-      <div class="col-md-offset-2 col-md-4">
-
-        <% if @computer_move == "rock" %>
-        <img src="http://localhost:3000/assets/images/rock.png" width="200">
-        @new_move="You tied!"
-        <% elsif @computer_move == "paper"%>
-        <img src="http://localhost:3000/assets/images/paper.png" width="200">
-        @new_move="You lose!"
-
-        <% elsif @computer_move == "scissors"  %>
-        <img src="http://localhost:3000/assets/images/scissors.png" width="200">
-          new_move="You win!"
-          <% end %>
-
+      <div class="col-md-offset-1 col-md-3">
+        <button type="button" class="btn btn-primary" action="submit">
+          <a href="http://localhost:3000/rock" >
+                  Play rock
+          </a>
+        </button>
       </div>
-      <div class="col-md-4"></div>
+      <div class="col-md-3">
+        <button type="button" class="btn btn-info" action="submit">
+          <a href="http://localhost:3000/scissors" >
+            Play Scissors
+          </a>
+          <!-- <a href="scissors" class="btn btn-info btn-lg active" role="button">Play Scissors </a>
+          Play scissors -->
+
+  <!-- <button action="user_plays_scissors"> -->
+
+        </button>
+      </div>
+      <div class="col-md-3">
+        <button type="user_plays_paper" class="btn btn-primary" action="submit">
+          <a href="http://localhost:3000/paper" >
+          Play paper
+        </button></div>
+      </div>
+      <p> You played Rock. </p>
+
+      <img src="http://localhost:3000/assets/images/rock.png" width="200">
+
+      <div class="row">
+        <div class="col-md-offset-2 col-md-4">
+
+          <% if @computer_move == "rock" %>
+          <img src="http://localhost:3000/assets/images/rock.png" width="200">
+          @new_move="You tied!"
+          <% elsif @computer_move == "paper"%>
+          <img src="http://localhost:3000/assets/images/paper.png" width="200">
+          @new_move="You lose!"
+
+          <% elsif @computer_move == "scissors"  %>
+          <img src="http://localhost:3000/assets/images/scissors.png" width="200">
+            new_move="You win!"
+            <% end %>
+
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+      <div class="row">
+
+        <div class="col-xs-12"></div>
+      </div>
     </div>
-    <div class="row">
-
-      <div class="col-xs-12"></div>
-    </div>
-  </div>
 
 
-  <!-- <h2>
-  <%= rand(100) %>
-</h2> -->
+    <!-- <h2>
+    <%= rand(100) %>
+  </h2> -->
